@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+﻿<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <%@taglib prefix="s" uri="/struts-tags" %>
 <%
 String path = request.getContextPath();
@@ -25,7 +25,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-  	<h1>欢迎	${cookie['USERNAME'].value}</h1>
+  	<h1>欢迎大家	${cookie['USERNAME'].value}</h1>
   	<s:a action="countryAction!preAdd">增加</s:a>
   	<form action="countryAction!queryByNameOrLanguage" method="post">
   		国家<input type="text" name="name"/>

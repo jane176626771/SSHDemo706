@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+﻿<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -22,7 +22,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
     	<form action="loginAction!login" method="post">
-    		<input type="text" name="name"/>    		
+    		<input type="text" name="name"/>  
+		<input type="text" name="name1"/>    		
     		<input type="password" name="password"/>
 	   		<input type="submit" value="登录"/>
     	</form>
